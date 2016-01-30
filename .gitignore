@@ -1,0 +1,12 @@
+coverage
+pkg
+ruby/
+docs/_build
+.bundle
+*.gem
+gemfiles/*.lock
+Gemfile.lock
+.coveralls.yml
+.ruby-version
+.ruby-gemset
+.idea
