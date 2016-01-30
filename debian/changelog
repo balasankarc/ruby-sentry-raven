@@ -1,5 +1,5 @@
-ruby-sentry-raven (0.15.3-1) UNRELEASED; urgency=medium
+ruby-sentry-raven (0.15.3-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #813186)
 
- -- Balasankar C <balasankarc@autistici.org>  Sat, 30 Jan 2016 14:22:58 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 30 Jan 2016 12:31:09 +0530

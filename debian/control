@@ -5,9 +5,12 @@ Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.al
 Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 9~),
                gem2deb,
+               libjs-jquery,
                rake,
                ruby-faraday (>= 0.7.6),
-               ruby-rspec
+               ruby-rails,
+               ruby-rspec,
+               ruby-rspec-rails, ruby-timecop
 Standards-Version: 3.9.6
 Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-sentry-raven.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-sentry-raven.git
@@ -18,9 +21,16 @@ XS-Ruby-Versions: all
 Package: ruby-sentry-raven
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
+Depends: rake,
+         ruby | ruby-interpreter,
+         ruby-delayed-job,
          ruby-faraday (>= 0.7.6),
+         ruby-rack,
+         ruby-rails,
+         ruby-sidekiq,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: A gem that provides a client interface for the Sentry error logger
- A gem that provides a client interface for the Sentry error logger
+Description: client interface for the Sentry error logger
+ This package provides the gem sentry-raven. This gem provides a client
+ interface for the Sentry error logger. Sentry provides real-time crash
+ reporting for your web apps, mobile apps, and games.
