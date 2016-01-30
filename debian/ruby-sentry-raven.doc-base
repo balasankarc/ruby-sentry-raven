@@ -1,0 +1,8 @@
+Document: sentry-raven-doc
+Title: Debian Sentry Raven manual
+Author: Sentry Team
+Section: Programming/Ruby
+
+Format: HTML
+Index: /usr/share/doc/ruby-sentry-raven/doc/index.html
+Files: /usr/share/doc/ruby-sentry-raven/doc/*

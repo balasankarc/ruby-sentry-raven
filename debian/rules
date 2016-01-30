@@ -4,3 +4,14 @@ export GEM2DEB_TEST_RUNNER = --check-dependencies
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_auto_build:
+	dh_auto_build
+	rdoc --main=README.md --exclude=commands lib
+	rm -rf usr/share/doc/ruby-sentry-raven/doc/js/jquery.js
+	rm -rf doc/js/navigation.js.gz doc/js/search_index.js.gz doc/js/searcher.js.gz doc/js/searcher.js.gz
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf doc
+	rm -rf Gemfile.lock
